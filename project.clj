@@ -1,13 +1,13 @@
 (defproject re-frame-datatable-example "0.1.0-SNAPSHOT"
-  :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.9.229"]
+  :dependencies [[org.clojure/clojure "1.10.1"]
+                 [org.clojure/clojurescript "1.10.520"]
                  [org.clojure/test.check "0.9.0"]
                  [figwheel-sidecar "0.5.8"]
-                 [reagent "0.6.0"]
-                 [re-frame "0.9.1"]
-                 [re-frame-datatable "0.5.0"]]
+                 [reagent "0.8.1"]
+                 [re-frame "0.10.9"]
+                 [re-frame-datatable "0.6.0"]]
 
-  :plugins [[lein-cljsbuild "1.1.4"]]
+  :plugins [[lein-cljsbuild "1.1.7"]]
 
   :min-lein-version "2.5.3"
 
@@ -19,8 +19,8 @@
 
   :profiles
   {:dev
-   {:dependencies [[binaryage/devtools "0.8.2"]]
-    :plugins      [[lein-figwheel "0.5.7"]]}}
+   {:dependencies [[binaryage/devtools "0.9.10"]]
+    :plugins      [[lein-figwheel "0.5.18"]]}}
 
   :cljsbuild
   {:builds
